@@ -1,0 +1,17 @@
+{
+  "name": "tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js -s bundle.js",
+    "build": "browserify index.js -d -o bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "lodash.minby": "4.4.0",
+    "moment": "2.13.0",
+    "browserify": "latest"
+  }
+}

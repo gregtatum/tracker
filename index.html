@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tracker</title>
+    <link rel='stylesheet' href='style.css'c harset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0" />
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Tracking <span class='tracking-thing'></span></h1>
+      <p>Put a unique something in the URL hash to track multiple things</p>
+      <div class='rows'></div>
+    </div>
+    <div class='row-template' style='display: none'>
+      <div class='row'>
+        <div class='date'>
+          <span class='date-week'></span>
+          <span class='date-day'></span>
+        </div>
+        <div class='buttons'>
+          <button class='decrease'>-</button>
+          <button class='increase'>+</button>
+        </div>
+        <div class='count'>0</div>
+      </div>
+    </div>
+    <script src='bundle.js'></script>
+  </body>
+</html>
