@@ -39,14 +39,15 @@ function buildTables(db) {
   var rows = document.querySelector('.rows')
   var rowTemplate = document.querySelector('.row-template > .row')
   var date = moment(firstEntry.date, DATE_FORMAT)
-  var tomorrow = moment().add(1, 'day')
+  var today = moment()
 
   // Do some overall work on the template
   document.querySelector('.tracking-thing').innerText = key
   document.querySelector('.container').className += " fadein"
 
   // Fill in rows
-  while (tomorrow.diff(date) > 0) {
+  while (today.diff(date) > 0) {
+    console.log(today.diff(date))
     // Add a row
     var row = rowTemplate.cloneNode(true)
     var dateText = date.format(DATE_FORMAT)
