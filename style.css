@@ -34,14 +34,14 @@ p {
 }
 .row > div {
   float:left;
-  padding:0.2em 1em;
+  padding:0.2em 0.7em;
 }
 .date {
   width: 50%;
   text-align:right;
 }
 .buttons {
-  width: 35%;
+  width: 38%;
   position: relative;
   top: -0.3em;
 }
@@ -50,15 +50,19 @@ p {
   text-align: center;
 }
 .buttons > button {
-    background: #69b0da;
-    width: 45%;
-    border: none;
-    margin: 0;
-    height: 2.1em;
-    border-radius: 0.2em;
-    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.2);
+  background: #69b0da;
+  width: 39%;
+  border: none;
+  margin: 0;
+  height: 2.3em;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.2);
+  margin-left: 10%;
+}
+.buttons > button:first-child {
+  margin-left:0;
 }
 .date-week {
-    color: #8199a9;
-    font-weight: lighter;
+  color: #8199a9;
+  font-weight: lighter;
 }
