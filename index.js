@@ -1,6 +1,6 @@
 var moment = require('moment')
 var minBy = require('lodash.minby')
-
+var onTap = require("@tatumcreative/on-tap")
 var DATE_FORMAT = "YYYY/MM/DD"
 
 var key = window.location.hash.substr(1) || "Things"
@@ -12,7 +12,6 @@ window.onhashchange = function() {
   console.log('Key is: ', key)
   var db = getInitialDB()
   buildTables(db)
-
 })()
 
 function getInitialDB() {
@@ -74,13 +73,13 @@ function buildTables(db) {
 }
 
 function addButtonListeners (db, dateText, increaseEl, decreaseEl, countEl) {
-  increaseEl.addEventListener('click', function() {
+  onTap(increaseEl, function(howMuch) {
     countEl.innerText = updateEntry(db, dateText, 1)
-  }, false)
+  })
 
-  decreaseEl.addEventListener('click', function() {
+  onTap(decreaseEl, function() {
     countEl.innerText = updateEntry(db, dateText, -1)
-  }, false)
+  })
 }
 
 function updateEntry(db, dateText, howMuch) {

@@ -10,8 +10,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@tatumcreative/on-tap": "1.1.0",
+    "browserify": "latest",
     "lodash.minby": "4.4.0",
-    "moment": "2.13.0",
-    "browserify": "latest"
+    "moment": "2.13.0"
   }
 }
